@@ -17,13 +17,17 @@
 
         </div>
        <p> <button class="btn btn-outline-danger mt-5" style="height: 50px; width: 75%;" onclick="lovecalc()">Calculate</button></p>
-       <button class="btn btn-outline-danger" onclick="play_song()">PlaySong</button>
+       <button class="btn btn-outline-danger" onclick="play_song()">Play Song</button>
+        <button class="btn btn-outline-danger" onclick="stop_song()">Stop Song</button>
         <div id="display" class="text-bold text-danger fs-4 fw-4"></div>
         <div id="disp" class="text-danger fs-4 fw-4"></div>
     <script>
         var song = new Audio("somene_you_love.3gp")
         function play_song() {
             song.play()
+        }
+         function stop_song() {
+            song.pause()
         }
         function lovecalc() {     
             var math = Math.round(Math.random()*100)
