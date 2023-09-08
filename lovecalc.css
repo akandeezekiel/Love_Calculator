@@ -1,0 +1,10 @@
+#love_cal{
+    height: 50px; 
+    width: 75%;
+}
+
+@media screen and (max-width:420px){
+    #love_cal{
+        width: 200%;
+    }
+}
